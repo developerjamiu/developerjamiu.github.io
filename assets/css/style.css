@@ -1,0 +1,60 @@
+/* 
+* Header 
+*/
+
+/* Form */
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Header Image */
+.header_image {
+  height: 100vh;
+  min-height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/headline.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Button */
+.primary {
+  color: #fd6a02;
+}
+
+/* Button */
+.primary_button,
+.primary_button:visited {
+  background-color: #fd6a02;
+  color: white;
+}
+
+.primary_button:hover,
+.primary_button:active {
+  background-color: #e65a22;
+  color: white;
+}
+
+/* After Heading 2*/
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e65a22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
