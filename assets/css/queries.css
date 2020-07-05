@@ -28,6 +28,10 @@
     font-size: 1.8rem;
     font-weight: 400;
   }
+
+  .how-it-works-card {
+    text-align: center;
+  }
 }
 
 /* Small Phones from 0 to 480px */
