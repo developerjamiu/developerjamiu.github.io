@@ -80,14 +80,21 @@ h2:after {
   background-color: black;
 }
 
-/* Featurettes
-------------------------- */
+/* Quote */
+.quotation-mark {
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: 100px;
+  color: grey;
+  font-family: "Times New Roman", Georgia, Serif;
+}
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
+.quotation-mark-bottom {
+  font-weight: bold;
+  font-size: 100px;
+  color: grey;
+  text-align: end;
+  font-family: "Times New Roman", Georgia, Serif;
 }
 
 /* RESPONSIVE CSS
@@ -99,15 +106,5 @@ h2:after {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
   }
 }
