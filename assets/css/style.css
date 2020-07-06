@@ -1,6 +1,6 @@
-/* 
-* Header 
-*/
+html {
+  overflow-x: hidden;
+}
 
 /* Form */
 .has-search .form-control {
