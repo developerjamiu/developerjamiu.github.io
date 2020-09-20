@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign up to Faaiz</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../user-assets/css/login.css" />
+  </head>
+  <body>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div class="container">
+        <div class="card login-card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img
+                src="../user-assets/img/login.jpg"
+                alt="login"
+                class="login-card-img"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body-2">
+                <div class="brand-wrapper">
+                  <img
+                    src="../user-assets/img/logo.png"
+                    alt="logo"
+                    class="logo"
+                    height="50px"
+                  />
+                </div>
+                <p class="login-card-description">Sign Up</p>
+                <form action="#" class="form-2">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="firstname" class="sr-only">Full Name</label>
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        class="form-control"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastname" class="sr-only">Last Name</label>
+                      <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        class="form-control"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="username" class="sr-only">User Name</label>
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        class="form-control"
+                        placeholder="User Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="emailaddress" class="sr-only"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        name="emailaddress"
+                        id="emailaddress"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="dateofbirth" class="sr-only"
+                        >Date of Birth</label
+                      >
+                      <input
+                        type="date"
+                        name="dateofbirth"
+                        id="dateofbirth"
+                        class="form-control"
+                        placeholder="Date of Birth"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="gender" class="sr-only">Email Address</label>
+                      <select
+                        class="custom-select"
+                        id="gender"
+                        name="gender"
+                        style="border: 1px solid #d5dae2;
+                          padding: 0 25px;
+                          margin-bottom: 20px;
+                          min-height: 45px;
+                          font-size: 13px;
+                          font-weight: normal;"
+                      >
+                        <option selected>Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="password" class="sr-only">Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="confirmpassword" class="sr-only"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        name="confirmpassword"
+                        id="confirmpassword"
+                        class="form-control"
+                        placeholder="Confirm Password"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input
+                    name="login"
+                    id="login"
+                    class="btn btn-block login-btn"
+                    type="submit"
+                    value="Sign Up"
+                  />
+                  <div class="custom-control custom-checkbox  mb-3">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="terms"
+                    />
+                    <label class="custom-control-label" for="terms"
+                      >I accept all terms and conditions</label
+                    >
+                  </div>
+                </form>
+                <p class="register-card-footer-text">
+                  Have an account?
+                  <a href="login.html" class="text-reset">Login here</a>
+                </p>
+                <nav class="login-card-footer-nav">
+                  <a href="#!">Terms of use.</a>
+                  <a href="#!">Privacy policy</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

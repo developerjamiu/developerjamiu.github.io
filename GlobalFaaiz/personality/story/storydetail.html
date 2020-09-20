@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>GlobalFaaiz</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../story-assets/css/style.css" />
+  </head>
+
+  <body>
+    <div style="overflow-x: hidden;">
+      <header id="home">
+        <nav class="navbar navbar-expand py-3 container navbar-light">
+          <a class="navbar-brand mr-3" href="#">
+            <img
+              src="../story-assets/img/logo.png"
+              height="40"
+              alt="Brand Logo"
+            />
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link font-weight-bold"
+                id="home-tabs"
+                role="button"
+                href="#"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><i class="fa fa-user"></i> Reader01<i
+                  class="ml-2 fa fa-caret-down"
+                ></i
+              ></a>
+              <div class="dropdown-menu" aria-labelledby="home-tabs">
+                <a class="dropdown-item"
+                  ><i class="fa fa-home mr-2" aria-hidden="true"></i> Home</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="<?php echo HOME_URL ?>notification.php"
+                  ><i class="fa fa-bell mr-2" aria-hidden="true"></i>
+                  Notification</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="<?php echo HOME_URL ?>user/profile.php"
+                  ><i class="fa fa-book mr-2" aria-hidden="true"></i> My
+                  Library</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="<?php echo HOME_URL ?>subscribe/store.php"
+                  ><i class="fa fa-building mr-2" aria-hidden="true"></i>
+                  Store</a
+                >
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" onclick="logout()" href="#"
+                  ><i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                  Logout</a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div
+        class="container-fluid bg-dark text-white py-5 image-background mb-5"
+      >
+        <div class="container py-2">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="book-cover shadow-sm d-none d-md-block"></div>
+            </div>
+            <div class="col-md-8 col-lg-9 my-auto mx-0">
+              <div class="pt-4">
+                <h2 class="mb-4">
+                  Romance 101
+                </h2>
+                <p class="meta">
+                  <span class="mr-3"
+                    ><i class="fa fa-calendar mr-2"></i>June 28, 2019</span
+                  >
+                  <span class="mr-3"
+                    ><i class="fa fa-sticky-note mr-2"></i>Travel</span
+                  >
+                  <span class="mr-3"
+                    ><i class="fa fa-comments mr-2"></i>5 Comment</span
+                  >
+                </p>
+                <div class="row align-items-center no-gutters">
+                  <div class="mt-3 align-items-center col-6">
+                    <a href="#" class="user-image mr-3"></a>
+                    <div style="display: inline-block;">
+                      <p class="lead font-weight-bold my-1">By Victor Bright</p>
+                      <span class="text-grey">Completed</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 ml-auto">
+                    <a href="#" class="mr-3 icon"
+                      ><i class="fa fa-twitter mr-2"></i
+                    ></a>
+                    <a href="#" class="mr-3 icon"
+                      ><i class="fa fa-linkedin mr-2"></i
+                    ></a>
+                    <a href="#" class="mr-3 icon"
+                      ><i class="fa fa-facebook mr-2"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="postioned-button">
+                  <a
+                    href="#"
+                    class="btn primary_button p-2 px-xl-3 py-xl-2 mt-5"
+                    >Start Reading</a
+                  >
+                  <a
+                    href="#"
+                    class="btn primary_button-outline p-2 px-xl-3 py-xl-2 mt-5 ml-2"
+                    ><i class="fa fa-plus"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <div class="blog-post-wrapper">
+                <div class="post-information">
+                  <div class="entry-content">
+                    <p>
+                      Aliquam et metus pharetra, bibendum massa nec, fermentum
+                      odio. Nunc id leo ultrices, mollis ligula in, finibus
+                      tortor. Mauris eu dui ut lectus fermentum eleifend.
+                      Pellentesque faucibus sem ante, non malesuada odio varius
+                      nec. Suspendisse potenti. Proin consectetur aliquam odio
+                      nec fringilla. Sed interdum at justo in efficitur. Vivamus
+                      gravida volutpat sodales. Fusce ornare sit amet ligula
+                      condimentum sagittis.
+                    </p>
+                    <p>
+                      Aenean et tempor eros, vitae sollicitudin velit. Etiam
+                      varius enim nec quam tempor, sed efficitur ex ultrices.
+                      Phasellus pretium est vel dui vestibulum condimentum.
+                      Aenean nec suscipit nibh. Phasellus nec lacus id arcu
+                      facilisis elementum. Curabitur lobortis, elit ut elementum
+                      congue, erat ex bibendum odio, nec iaculis lacus sem non
+                      lorem. Duis suscipit metus ante, sed convallis quam
+                      posuere quis.
+                    </p>
+                  </div>
+                  <div class="single-blog-page mt-5">
+                    <div class="comments">
+                      <h4>Comments</h4>
+                      <ul>
+                        <div class="d-flex flex-row my-3">
+                          <div class="p-2">
+                            <img
+                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"
+                              alt="user"
+                              width="50"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="w-100 ml-3">
+                            <div>
+                              <h6
+                                class="font-medium"
+                                style="display: inline-block;"
+                              >
+                                James Thomas
+                              </h6>
+                              <span
+                                class="text-muted ml-3"
+                                style="font-size: 90%;"
+                                >April 14, 2019</span
+                              >
+                            </div>
+                            <p class="text-justify">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptatum exercitationem doloremque dicta
+                              nostrum deserunt accusamus dolorem praesentium
+                              iusto omnis. Iusto accusamus corrupti corporis
+                              blanditiis dolorum, necessitatibus sit? Maxime,
+                              accusamus harum ullam hic consequatur odio a odit?
+                              Deleniti a officiis eum.
+                            </p>
+                            <div class="comment-icons">
+                              <a class="btn btn-sm">
+                                <i class="fa fa-thumbs-up text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-heart text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-reply text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-edit text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row my-3 reply">
+                          <div class="p-2">
+                            <img
+                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"
+                              alt="user"
+                              width="50"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="w-100 ml-3">
+                            <div>
+                              <h6
+                                class="font-medium"
+                                style="display: inline-block;"
+                              >
+                                James Thomas
+                              </h6>
+                              <span
+                                class="text-muted ml-3"
+                                style="font-size: 90%;"
+                                >April 14, 2019</span
+                              >
+                            </div>
+                            <p class="text-justify">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptatum exercitationem doloremque dicta
+                              nostrum deserunt accusamus dolorem praesentium
+                              iusto omnis. Iusto accusamus corrupti corporis
+                              blanditiis dolorum.
+                            </p>
+                            <div class="comment-icons">
+                              <a class="btn btn-sm">
+                                <i class="fa fa-thumbs-up text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-heart text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-reply text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-edit text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row my-3">
+                          <div class="p-2">
+                            <img
+                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"
+                              alt="user"
+                              width="50"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="w-100 ml-3">
+                            <div>
+                              <h6
+                                class="font-medium"
+                                style="display: inline-block;"
+                              >
+                                James Thomas
+                              </h6>
+                              <span
+                                class="text-muted ml-3"
+                                style="font-size: 90%;"
+                                >April 14, 2019</span
+                              >
+                            </div>
+                            <p class="text-justify">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptatum exercitationem doloremque dicta
+                              nostrum deserunt accusamus dolorem praesentium
+                              iusto omnis. Iusto accusamus corrupti corporis
+                              blanditiis dolorum, necessitatibus sit? Maxime,
+                              accusamus harum ullam hic consequatur odio a odit?
+                              Deleniti a officiis eum.
+                            </p>
+                            <div class="comment-icons">
+                              <a class="btn btn-sm">
+                                <i class="fa fa-thumbs-up text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-heart text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-reply text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-edit text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row my-3 reply">
+                          <div class="p-2">
+                            <img
+                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"
+                              alt="user"
+                              width="50"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="w-100 ml-3">
+                            <div>
+                              <h6
+                                class="font-medium"
+                                style="display: inline-block;"
+                              >
+                                James Thomas
+                              </h6>
+                              <span
+                                class="text-muted ml-3"
+                                style="font-size: 90%;"
+                                >April 14, 2019</span
+                              >
+                            </div>
+                            <p class="text-justify">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptatum exercitationem doloremque dicta
+                              nostrum deserunt accusamus dolorem praesentium
+                              iusto omnis. Iusto accusamus corrupti corporis
+                              blanditiis dolorum.
+                            </p>
+                            <div class="comment-icons">
+                              <a class="btn btn-sm">
+                                <i class="fa fa-thumbs-up text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-heart text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-reply text-secondary"></i>
+                              </a>
+                              <a class="btn btn-sm">
+                                <i class="fa fa-edit text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="page-head-blog">
+                <div class="single-blog-page">
+                  <div class="left-blog">
+                    <h4>See other genres</h4>
+                    <ul>
+                      <li>
+                        <a href="#">Branding</a>
+                      </li>
+                      <li>
+                        <a href="#">Psychology</a>
+                      </li>
+                      <li>
+                        <a href="#">Romance</a>
+                      </li>
+                      <li>
+                        <a href="#">History</a>
+                      </li>
+                      <li>
+                        <a href="#">Career</a>
+                      </li>
+                      <li>
+                        <a href="#">Health</a>
+                      </li>
+                      <li>
+                        <a href="#">Religion</a>
+                      </li>
+                      <li>
+                        <a href="#">Fiction</a>
+                      </li>
+                      <li>
+                        <a href="#">Non-Fiction</a>
+                      </li>
+                      <li>
+                        <a href="#">Thriler</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="container-fluid pt-3 pb-2 text-white bg-dark">
+        <div class="container">
+          <p class="float-right"><a href="#home">Back to top</a></p>
+          <p>
+            &copy; 2017-2020 GlobalFaaiz. &middot;
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
