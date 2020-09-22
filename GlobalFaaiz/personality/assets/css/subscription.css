@@ -1,0 +1,84 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button */
+.primary {
+  color: #fd6a02;
+}
+
+.secondary {
+  color: white;
+}
+
+.icon {
+  max-width: 80px;
+}
+
+.primary_button,
+.primary_button:visited {
+  background-color: #fd6a02;
+  color: white;
+}
+
+.primary_button:hover,
+.primary_button:active {
+  background-color: #e65a22;
+  color: white;
+}
+
+.header_image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/payment_headline.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* After Heading 2*/
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e65a22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#treasury img {
+  height: 250px;
+}
+
+#payment {
+  background-image: url(../img/payment_bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#payment .card {
+  background-color: #e7d9c5;
+}
+
+#payment .list-group-item {
+  background-color: #e7d9c5;
+}
+
+#payment .list-group-item::before {
+  content: "\2022   ";
+}
+
+/* Footer */
+footer a {
+  color: #ddd;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
