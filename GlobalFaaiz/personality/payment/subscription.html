@@ -20,7 +20,7 @@
   </head>
   <body>
     <div style="overflow-x: hidden;">
-     <header class="header_image" id="home">
+      <header class="header_image" id="home">
         <div class="container h-100">
           <nav class="navbar navbar-expand py-3 container navbar-light">
             <a class="navbar-brand mr-3" href="#">
@@ -156,7 +156,12 @@
                   <li class="list-group-item">Cancel at any time</li>
                 </ul>
                 <div class="card-body">
-                  <a href="" class="btn primary_button border-0 px-4 py-2 mt-2"
+                  <a
+                    href=""
+                    class="btn primary_button border-0 px-4 py-2 mt-2"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#paymentModal"
                     >Get Basic</a
                   >
                 </div>
@@ -209,6 +214,131 @@
                   <a href="#" class="btn primary_button border-0 px-4 py-2 mt-2"
                     >Get Pro</a
                   >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="paymentModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-body">
+            <div class="modal-content">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <h3 class="font-weight-bold pb-3">Billing Info</h3>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="fullName">Full Name *</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="fullName"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="lastName">Last Name *</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="emailAddress">Email Address *</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="emailAddress"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="phoneNumber">Phone Number *</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="phoneNumber"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="country">Country *</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="country"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="package">Package</label>
+                          <select id="package" class="form-control">
+                            <option selected>Basic</option>
+                            <option>Premium</option>
+                            <option>Pro</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="period">Period</label>
+                          <select id="period" class="form-control">
+                            <option selected>A year</option>
+                            <option>1 month</option>
+                            <option>6 months</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn primary_button border-0 px-4 py-2 mt-2"
+                      >
+                        Proceed
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-lg-5">
+                    <h3 class="font-weight-bold pb-4 pt-4 pt-lg-1">
+                      Your order
+                    </h3>
+                    <table class="table table-lg">
+                      <thead>
+                        <tr>
+                          <th>Product</th>
+                          <th>Subtotal</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Package</td>
+                          <td>Basic</td>
+                        </tr>
+                        <tr>
+                          <td>Period</td>
+                          <td>1 month</td>
+                        </tr>
+                        <tr>
+                          <td>Price</td>
+                          <td>$</td>
+                        </tr>
+                        <tr class="font-weight-bold">
+                          <td>Total</td>
+                          <td>$</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
